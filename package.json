@@ -1,0 +1,38 @@
+{
+  "name": "sails-generate-frontend-angular",
+  "version": "0.0.1",
+  "description": "Generate an angular frontend for Sails.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "frontend",
+    "generator",
+    "angular",
+    "restangular",
+    "ui-router",
+    "crud"
+    "sails",
+    "generate",
+    "plugin"
+  ],
+  "author": "Christopher 'chief' Najewicz <chief@beefdisciple.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": ">=2.4.x",
+    "merge-defaults": ">=0.1.0"
+  },
+  "devDependencies": {
+    "sails-generate": "*",
+    "reportback": "*",
+    "fs-extra": "~0.8.1",
+    "bower": "~1.3.1",
+    "async": "~0.6.2"
+  },
+  "sailsGenerator": {
+    "type": "frontend",
+    "behavior": "overrides `sails generate frontend`",
+    "sailsVersion": "~0.10.0"
+  }
+}
