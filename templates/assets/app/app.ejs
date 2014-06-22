@@ -1,6 +1,19 @@
-(function(ng) {
+(function(ng, _) {
     'use strict';
 
-    ng.module('<%= appName %>',['restangular','ui.router']);
+    ng.module('<%= appName %>',['restangular','ui.router'])
+       .config(function(RestangularProvider) {
+            RestangularProvider.addRequestInterceptor(function(el, operation) {
+                if (operation === 'put') {
+                    // We don't need to send these to the API
+                    _.each(['createdAt', 'updatedAt'], function(prop) {
+                        if (el[prop]) {
+                            delete el[prop];
+                        }
+                    });
+                }
+                return el;
+            });
+        });
 
-})(window.angular);
+})(window.angular, window._);
