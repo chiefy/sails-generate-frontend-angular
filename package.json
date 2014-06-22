@@ -12,7 +12,7 @@
     "angular",
     "restangular",
     "ui-router",
-    "crud"
+    "crud",
     "sails",
     "generate",
     "plugin"

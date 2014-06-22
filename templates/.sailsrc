@@ -1,0 +1,9 @@
+{
+    "generators": {
+        "modules" : {
+            "api" : "sails-generate-api-angular",
+            "model" : "sails-generate-model-angular",
+            "controller" : "sails-generate-controller-angular"
+        }
+    }
+}
