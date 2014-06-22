@@ -16,6 +16,18 @@ $ npm install sails-generate-frontend-angular
 ```
 -->
 
+#### Update your .sailsrc file
+If you want to use this when creating new sails projects, you will need to modify your `.sailsrc` file in your home directory, or the parent directory of where you are creating projects. 
+```json
+{
+    "generators" : {
+        "modules" : {
+            "frontend" : "sails-generate-frontend-angular"
+        }
+    }
+}
+```
+After this change, when you `sails new <project>` it will use `sails-generate-frontend-angular` by default.
 
 ### Production Usage
 

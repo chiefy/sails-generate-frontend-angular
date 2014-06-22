@@ -1,7 +1,6 @@
 {
     "generators": {
         "modules" : {
-            "model" : "sails-generate-model-angular",
             "controller" : "sails-generate-controller-angular"
         }
     }
