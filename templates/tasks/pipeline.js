@@ -23,9 +23,11 @@ var cssFilesToInject = [
 // (uses Grunt-style wildcard/glob/splat expressions)
 var jsFilesToInject = [
   'vendor/angular/angular.min.js',
-  'vendor/lodash/dist/lodash.js',
-  'vendor/restangular/dist/restangular.js',
+  'vendor/lodash/dist/lodash.min.js',
+  'vendor/restangular/dist/restangular.min.js',
   'vendor/angular-ui-router/release/angular-ui-router.min.js',
+
+  'app/app.js',
   'app/**/*.js'
 ];
 
