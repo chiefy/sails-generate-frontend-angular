@@ -7,7 +7,8 @@
                 .addRequestInterceptor(function(el, operation) {
                     if (operation === 'put' || operation === 'post') {
                         // We don't need to send these to the API
-                        _.each(['createdAt', 'updatedAt', 'definition'], function(prop) {
+                        var excluded_attrs = ['createdAt', 'updatedAt', 'originalElement'];
+                        _.each(excluded_attrs, function(prop) {
                             if (el[prop]) {
                                 delete el[prop];
                             }
