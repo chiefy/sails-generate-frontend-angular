@@ -34,23 +34,13 @@ After this change, when you `sails new <project>` it will use `sails-generate-fr
 ##### On the command line
 
 ```sh
-$ sails generate frontend-angular
+$ sails new myApp
 ```
 
-##### In a node script
-
-```javascript
-var path = require('path');
-var sailsgen = require('sails-generate');
-var scope = {
-	rootPath: path.resolve(__dirname)
-};
-sailsgen(require('sails-generate-frontend-angular'), scope, function (err) {
-	if (err) throw err;
-
-	// It worked.
-});
-```
+### Roadmap
+* Fix grunt tasks for production
+* Optional angular-classy support
+* Optional Coffeescript support
 
 
 ### Development
